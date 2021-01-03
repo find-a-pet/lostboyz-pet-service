@@ -1,0 +1,35 @@
+description:  ${spring.application.description}
+title:  ${spring.application.name}
+version:  ${spring.application.version}
+
+info:
+  app:
+    id: ${spring.application.id}
+    name: ${spring.application.name}
+    version: ${spring.application.version}
+
+server:
+  port: 14004
+
+app:
+  datasource:
+    jdbc-url: ${JDBC_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    pool-size: 1000
+
+spring:
+  application:
+    description: Lostboyz pet service
+    id: lostboyz-pet-service
+    name: lostboyz-pet-service
+    version: 0.0.1-SNAPSHOT
+  output:
+    ansi:
+      enabled: detect
+
+logging:
+  file:
+    name: logs/lostboyz-pet-service.log
+  level:
+    root: ERROR
