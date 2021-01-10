@@ -14,6 +14,7 @@ public class Datasource {
     public HikariDataSource dataSource() {
         return DataSourceBuilder
                 .create()
+                .driverClassName("org.postgresql.Driver")
                 .type(HikariDataSource.class)
                 .build();
     }
