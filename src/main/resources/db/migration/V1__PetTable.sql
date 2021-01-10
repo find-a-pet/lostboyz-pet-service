@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS pets (
     type VARCHAR,
     url TEXT NOT NULL,
     breed VARCHAR,
-    is_found BOOLEAN DEFAULT FALSE,
-    last_seen_location VARCHAR
+    found BOOLEAN DEFAULT FALSE,
+    location VARCHAR
 );

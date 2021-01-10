@@ -6,9 +6,20 @@ public interface Constants {
     String SELECT_ALL_PETS = "SELECT * FROM pets";
     String SELECT_A_PET = "SELECT * FROM pets WHERE id = ?";
     String DELETE_A_PET = "DELETE FROM pets WHERE id = ?";
-    String UPDATE_A_PET_IS_FOUND = "UPDATE pets SET is_found = ? WHERE id = ?";
+    String UPDATE_A_PET_IS_FOUND = "UPDATE pets" +
+            " SET id = ?," +
+            " age = ?," +
+            " sex = ?," +
+            " description = ?," +
+            " name = ?," +
+            " type = ?," +
+            " url = ?," +
+            " breed = ?," +
+            " found = ?," +
+            " location = ?" +
+            " WHERE id = ?";
     String REGISTER_A_PET = "INSERT INTO pets" +
-            " (id, age, sex, description, name, type, url, breed, last_seen_location)" +
+            " (id, age, sex, description, name, type, url, breed, location)" +
             " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     // exceptions

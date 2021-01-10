@@ -9,7 +9,7 @@ info:
     version: ${spring.application.version}
 
 server:
-  port: 14004
+  port: 15000
 
 app:
   datasource:
